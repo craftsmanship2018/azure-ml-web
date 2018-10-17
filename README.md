@@ -19,6 +19,16 @@ The overall target is to build a continuous integration pipeline for an AI appli
 ## Getting Started  
 * Download this Web App
 * Get it running locally (Note you will need the Machine Learning model created in Part I and test data)
+* In order to run locally you will need the latest version of Python installed - https://www.python.org/downloads/
+* Make sure the Python path is added to System Path Variable so you can use it in CMD
+* Install Flask, Numpy and SkLearn using the following commands in cmd:
+  * py -m pip install flask
+  * py -m pip install numpy
+  * py -m pip install sklearn
+* After cloning the repo to somewhere locally you can navigate to the 'flaskwebapp' folder in a cmd prompt and load the app using the following command:
+  * python app.py
+* This will start the web server, you can then navigate to your browser and use localhost:5000 to contact the app
+* To invoke the ML call use the localhost:5000/score url, this will return a coefficient score for your model
 
 ## Goal  
 Build a CI/CD pipeline that will build and combine this web app with the necessary model and test data and deploy it in a repeatable fashion. This process should decouple the web app developers and data scientists, to make sure that their production app is always running the latest code with the latest ML model.
